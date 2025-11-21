@@ -1,4 +1,4 @@
-task.delay(game.Loaded:Wait(), function()
+task.delay(2.05, function()
 	game.Players.RespawnTime = 1
 	workspace.Gravity = 196.2
 	workspace.AirDensity = 0.1
