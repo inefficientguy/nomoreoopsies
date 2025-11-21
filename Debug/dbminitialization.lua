@@ -2,8 +2,11 @@ task.delay(2.05, function()
 	game.Players.RespawnTime = 1
 	workspace.Gravity = 196.2
 	workspace.AirDensity = 0.1
-	workspace.PhysicsSteppingMethod = Enum.PhysicsSteppingMethod.Fixed
-	workspace.PhysicsSimulationRate = 120
+	workspace.StreamingEnabled = true
+	workspace.StreamingMinRadius = 64
+	workspace.StreamingTargetRadius = 150
+	--workspace.PhysicsSteppingMethod = Enum.PhysicsSteppingMethod.Fixed
+	--workspace.PhysicsSimulationRate = 120
 
 	game.Lighting.GlobalShadows = false
 	game.Lighting.EnvironmentDiffuseScale = 0
@@ -20,9 +23,5 @@ task.delay(2.05, function()
 			v.Enabled = false
 		end
 	end
-
-	game:GetService("Workspace").StreamingEnabled = true
-	game:GetService("Workspace").StreamingMinRadius = 64
-	game:GetService("Workspace").StreamingTargetRadius = 150
 	print("dbm finished")
 end)
